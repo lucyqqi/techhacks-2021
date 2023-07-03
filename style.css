@@ -1,0 +1,667 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+  
+html, body{
+    height: 100%;
+}
+
+
+
+@font-face {
+  font-family: 'montserrat';
+  src: ("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap")
+}
+
+
+body{
+  background-color: rgb(248, 244, 255);
+  font-family: 'montserrat';
+  overflow-x: hidden;
+  text-align: center-align;
+}
+
+
+.header {
+  position: relative;
+  height: 600px;
+  background: rgb(248, 244, 255);
+}
+
+
+.header img {
+  position: absolute;
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 0% 0% 30% 30%;
+}
+
+.header h1 {
+  position: relative;
+  color: white;
+  font-family: 'montserrat';
+  font-size: 130px;
+  vertical-align: middle;
+  text-align: center;
+  top: 200px;
+  font-weight: 700x;
+  letter-spacing: 5px;
+}
+
+.info-grid {
+  padding: 50px 10px 10px 10px;
+  background: rgb(248, 244, 255);
+  display: grid;
+  /* Changed height to 100% */
+  /* height: 400px; */
+  height: 100%;
+  //grid-column-gap: 10px;
+  //grid-row-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+    'x y z z';
+}
+
+
+.box1, .box2, .box3{
+  /* position: relative; */
+  display: block;
+  border-radius: 4px;
+  margin: 5px;
+  background-color: white;
+}
+.box1 {
+  grid-area: x;
+  justify-content: space-around;
+  align-content: center;
+  margin: 10px;
+  height: 100%
+}
+.box1 img {
+  position: relative;
+  margin: auto;
+  top: 25px;
+  width: 70%;
+  left: 15%;
+  object-fit: cover;
+  height: 180px;
+}
+.box1 p {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-family: 'montserrat';
+  font-size: 16px;
+  vertical-align: middle;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.box2 {
+  grid-area: y;
+  justify-content: space-around;
+  align-content: center;
+  height: 101%
+}
+.box2 img {
+  position: relative;
+  top: 25px;
+  left: 15%;
+  margin: auto;
+  width: 70%;
+  height: 180px;
+}
+.box2 p {
+  position: relative;
+  top: 50px;
+  text-align: center;
+  font-family: 'montserrat';
+  font-size: 16px;
+  vertical-align: middle;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.box3 {
+  grid-area: z;
+  align-content: center;
+  margin: 10px;
+  height: 100%
+}
+.box3 h3 {
+  position: relative;
+  top: 15px;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'montserrat';
+  font-weight: 550;
+}
+.box3 p {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-family: 'montserrat';
+  font-size: 16px;
+  vertical-align: middle;
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+.quote {
+  /* position: relative; */
+  text-align: center;
+  font-size: 28px;
+  letter-spacing: 2px;
+  font-family: 'montserrat';
+  font-weight: 550;
+  width: 100%;
+  height: auto;
+  color: white; 
+  background-color: rgb(118, 85, 172);
+  padding: 50px 10px;
+  line-height: 38px;
+  margin-left: -21px;
+}
+
+
+.img-grid {
+  padding: 50px 20px 100px 10px;
+  max-height: 90%;
+  max-width: 100%;
+  background: rgb(248, 244, 255);
+  display: grid;
+  object-fit: cover;
+  grid-column-gap: 10px;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: 
+    'a b';
+}
+
+.box4, .box5 {
+  /*position: relative;*/
+  display: block;
+  border-radius: 4px;
+  margin: 5px;
+  background: white;
+  width: 100%;
+}
+.box4 {
+  grid-area: a;
+  align-content: center;
+  justify-content: space-around;
+  font-family: 'montserrat';
+}
+
+.box4 p {
+  background-color: white;
+  
+}
+.box4 h3 {
+  position: relative;
+  top: 50px;
+  font-weight: 500;
+  font-size: 60px;
+  text-align: center;
+}
+.box4 p {
+  position: relative;
+  text-align: center;
+  top: 60px;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 20px 20px;
+}
+.box5 {
+  grid-area: b;
+}
+.bottom-footer {
+  background: rgb(20, 4, 48);
+  border-top: 5px solid rgb(57, 57, 57);
+  height: 100px;
+  text-align: center;
+  vertical-align: bottom;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+ul {
+  list-style-type:none;
+  background-color:rgb(118, 85, 172);
+  overflow:hidden;
+  padding:1em;
+  text-align:center; 
+}
+
+
+
+
+li {
+  display:inline;
+}
+
+li a {
+  text-decoration: none;
+  color:white;
+  font-size:1.3em;
+  padding:1em;
+}
+
+li a:hover{
+  background-color: rgb(195, 173, 230);
+}
+
+p {
+  text-align: center;
+  margin: 40px;
+  
+}
+
+#href {
+  text-align: center;
+  margin: 40px;
+}
+}
+
+
+h1{
+  text-align: center;
+  font-weight: 400px;
+  font-size: 40px;
+  vertical-align: middle;
+  
+}
+
+h2{
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+
+h3{
+  font-size: 20px;
+  text-align: center;
+  font-family: montserrat; 
+}
+
+
+h4{
+  font-size: 20px;
+  text-align: center;
+  font-family: montserrat; 
+}
+
+
+h5{
+  font-size: 20px;
+  text-align: center;
+  font-family: montserrat; 
+}
+}
+
+.submit-btn {
+  align-items: center;
+  justify-content: center;
+  padding: 20px 18px;
+  background-color: rgb(196, 137, 61);
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  border: none;
+  font-family: 'montserrat';
+}
+
+button{
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: rgb(118, 85, 172);
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  border: none;
+  font-family: 'montserrat';
+}
+
+.submit-button{
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: rgb(118, 85, 172);
+  font-size: 16px;
+  color: white;
+  margin: auto;
+  border: none;
+  font-family: 'montserrat';
+}
+
+.contactMethods {
+  font: 'montserrat';
+}
+
+.message-input{
+  align-items: center;
+  justify-content: center;
+  padding: 10px 300px;
+  text-align: center;
+  font-family: 'montserrat';
+}
+
+
+// button thingy 
+
+/*
+main{
+    align-items: center;
+    background-color: rgb(69, 43, 110);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+*/
+
+.game-quiz-container{
+    width: 40rem;
+    height: 30rem;
+    background-color: rgb(202, 195, 218);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    font-weight: 400;
+}
+
+.game-details-container{
+    width: 80%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.game-details-container h1{
+    font-size: 1.2rem;
+    color: black; 
+    font-weight: 400;
+}
+
+.game-question-container{
+    width: 80%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid darkgray;
+    border-radius: 25px;
+}
+
+.game-question-container h1{
+    font-size: 1.1rem;
+    text-align: center;
+    padding: 3px;
+}
+
+.game-options-container{
+    width: 80%;
+    height: 12rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.game-options-container span{
+    width: 45%;
+    height: 3rem;
+    border: 2px solid darkgray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+span label{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    font-weight: 600;
+    color: rgb(22, 22, 22);
+}
+
+span label:hover{
+    -ms-transform: scale(1.12);
+    -webkit-transform: scale(1.12);
+    transform: scale(1.12);
+    color: white;
+}
+
+input[type="radio"] {
+    position: relative;
+    display: none;
+}
+
+
+input[type=radio]:checked ~ .option {
+	background: rgb(223, 208, 247);
+}
+
+.next-button-container{
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+}
+.next-button-container button{
+    width: 8rem;
+    height: 2rem;
+    border-radius: 10px;
+    background: none;
+    color: rgb(25, 25, 25);
+    font-weight: 600;
+    border: 2px solid gray;
+    cursor: pointer;
+    outline: none;
+}
+.next-button-container button:hover{
+    background-color: rgb(201, 178, 236);
+}
+
+.next-button-container p{
+  font-weight: 400;
+}
+
+
+.modal-container{
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(43, 42, 42); 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.modal-content-container{
+    height: 20rem;
+    width: 25rem;
+    background-color: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.modal-content-container h1{
+    font-size: 1.3rem;
+    height: 3rem;
+    font-weight: 400;
+    color: lightgray;
+    text-align: center;
+}
+
+.grade-details{
+    //width: 15rem;
+    //height: 10rem;
+    display: block; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grade-details p{
+    color: white;
+    line-height: 0.05em;
+    text-align: center;
+}
+
+.modal-button-container{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-button-container button{
+    width: 10rem;
+    height: 2rem;
+    background: none;
+    outline: none;
+    border: 1px solid rgb(252, 242, 241);
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.modal-button-container button:hover{
+    background-color: rgb(83, 82, 82);
+}
+
+@media(min-width : 300px) and (max-width : 350px){
+    .game-quiz-container{
+        width: 90%;
+        height: 80vh;
+     }
+     .game-details-container h1{
+        font-size: 0.8rem;
+        font-weight: 400;
+     }
+ 
+     .game-question-container{
+        height: 6rem;
+     }
+     .game-question-container h1{
+       font-size: 0.9rem;
+       font-weight: 400;
+    }
+ 
+    .game-options-container span{
+        width: 90%;
+        height: 2.5rem;
+    }
+    .game-options-container span label{
+        font-size: 0.8rem;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 25rem;
+    }
+    
+    .modal-content-container h1{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}
+
+@media(min-width : 350px) and (max-width : 700px){
+   .game-quiz-container{
+       width: 90%;
+       height: 80vh;
+    }
+    .game-details-container h1{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .game-question-container{
+        height: 8rem;
+    }
+
+    .game-question-container h1{
+      font-weight: 400;
+        font-size: 0.9rem;
+     }
+
+    .game-options-container span{
+        width: 90%;
+    }
+    .modal-content-container{
+        width: 90%;
+        height: 25rem;
+    }
+    .modal-content-container h1{
+      font-weight: 400;
+        font-size: 1.2rem;
+    }
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  
+/*
+footer{
+  positive: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(118, 85, 172);
+  color: white;
+  text-align: center;
+  /*padding:1px;
+  margin-top:5px;
+  color:#ffffff;
+  background-color:rgb(118, 85, 172);
+  text-align: center;
+  /*
+}
+
+
+footer p{
+  color: white;
+  font-family: montserrat; 
+  text-align: center;
+  font-size: 20px;
+}
+
